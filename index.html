@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angela's Site</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Loading Spinner -->
+        <div class="spinner" id="loader"></div>
+      
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+          <ul>
+            <li class="brand"><a href="#">Beyond Financial Soutions</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#completeprojects">Portflio</a></li>
+            <li><a href="#why-us" >Why Us</a></li>
+          </ul>
+        </nav>
+      
+        <header>
+          <section>
+           <div class="overlay-text">
+            <h1>We empower SMEs to grow with confidence by optimizing inventory and unlocking sustainable growth.
+            </h1>
+            </div>
+          </section>
+
+          <section>
+            <div  class="centered">
+                <a href="#contact" class="request-demo-btn">Request Demo</a> 
+            </div>
+          </section> 
+        </header>
+        
+      
+        <main >
+          <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+              <div class="service-card">
+                <h3>Stock & Cashflow Dashboards</h3>
+                <p>Track sales, stock, and cash in one place to prvent dead stocknand stock-outs</p>
+              </div>
+              <div class="service-card">
+                <h3>Profitabilty Insights</h3>
+                <p>See which products and branches actually make money, not just sales volume.</p>
+              </div>
+              <div class="service-card">
+                <h3>Monthly Data Structuring</h3>
+                <p>We clean and organize your Excel files so you can act fast with reliable numbers.</p>
+              </div>
+          </section>
+          
+          <section id="about">
+        <h2>About Us</h2>
+        <p>
+          At Beyond Financial Solutions, we’re a multidisciplinary team of data analysts, designers, and strategists driven by one goal: helping small businesses turn numbers into actionable insights. We specialize in building intuitive dashboards that empower entrepreneurs to forecast cashflow, segment their customer base, and identify financial blind spots—without needing a background in data science.
+          <br><br>
+          Whether you're a supermarket tracking seasonal trends or a hardware store optimizing inventory flow, we tailor every solution to fit your operational rhythm. With tools like Power BI, Excel, Python and even AI-powered modeling, our deliverables go beyond static reports—they evolve with your business.
+          <br><br>
+          But what truly sets us apart is our people. Our team combines design thinking with analytical precision, bridging business intelligence with empathy and client experience. We don’t just build dashboards—we build trust.
+        </p>
+          </section>
+
+          <section id="completeprojects">
+            <h2>Portflio</h2>
+            <p>Explore how our dashboards help SMEs cut waste, improve margins and free up cash</p>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="examples">
+                  <h3>Retail Stock Control</h3>
+                  <p>We helped a mid-sized retailer reduce stock-outs by 18%, cut deadstocks by 12% and improve repeat purchases by 9%.</p>
+                  <button class="button" onclick="openModal('retailModal')">View Project</button>
+                </div>
+                      
+              <div class="examples">
+                <h3>Sales Insights</h3>
+                <p>This project showcases our expertise in Cashflow-focused analysis.</p>
+              </div>
+            <div class="examples">
+                <h3>Sales and Inventory Insights</h3>
+                <p>The project tracs sales , prevent stock-outs and cut dead stock</p>
+              </div>
+            </div>        
+            </section>
+            <!-- Modal for Project 1 -->
+            <div id="retailModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('retailModal')">&times;</span>
+                <h2>Retail Stock Control Workbook</h2>
+                <button class="button" onclick="window.open('Workbook.xlsx')">View Workbook</button>
+                <a href="Workbook1.xlsx" class="button" download>Download Workbook</a>
+                <div class="report">
+                  <h3>Report</h3>
+                  <p>Findings: Reduced stock-outs by 18%, cut deadstocks by 12%, improved repeat purchases by 9%.</p>
+                </div>
+              </div>
+            </div>
+            <script>
+              function openModal(id) {
+                document.getElementById(id).style.display = "block";
+              }
+              function closeModal(id) {
+                document.getElementById(id).style.display = "none";
+              }
+            </script>
+              <section id="why-us">
+                <h2>Why Choose Beyond Financial Solutions?</h2>
+                <ul>
+                  ✅ Cash-focus metrics that drive real decisions
+                  ✅ Proven results in reducing waste and boosting margins
+                  ✅ Excel-fist,affordable slutions built for SMEs
+                  ✅ Local expertise with practical experience, hands-on support
+                </ul>
+              </section>
+              
+
+        
+
+          <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to see how Beyond Financial Solutions can help your bussiness grow? Get in touch today.</p>
+          </section>
+
+        </main>
+      
+        <footer>
+          <p>&copy; 2025 Angela’s Corner. All rights reserved.</p>
+        </footer>
+      <!-- Optional Script to Auto-Hide Spinner After Page Loads -->
+  <script>
+    window.addEventListener("load", () => {
+      document.getElementById("loader").style.display = "none";
+    });
+  </script>
+</body>
+</html>
+     
